@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form id="myForm" action="processform.php">
+        <p>placeholder: <input type="text" placeholder="Insert Name Hre"></p>
+
+        <p>autofocus: <input type="text" autofocus></p>
+
+        <p>autocomplete off: <input type="text" autocomplete="off"></p>
+
+        <p>required: <input type="text" required></p>
+
+        <p>email required: <input type="email" required></p>
+
+        <p>Pattern: <input type="text" pattern="[0-9]"></p>
+
+        <datalist id="names">
+
+            <select>
+
+                <option value="Alexei">Alexei</option>
+
+                <option value="Masha">Masha</option>
+
+            </select>
+
+        </datalist>
+
+        <p>Autocomplete: <input type="text" list="names"></p>
+
+        <p>Multiple file upload: <input type="file" multiple></p>
+
+        <p><input type="submit" value="button" formaction="processform2.php"></p>
+
+
+    </form>
+
+    <p>Code outside form: <input type="text" form="myForm"></p>
+
+</body>
+
+</html>
